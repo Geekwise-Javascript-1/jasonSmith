@@ -4,8 +4,8 @@ var name = prompt("Enter your first name");
 
 // Capitalize function
 // n = name
-function capitalize(n) {
-  rturn n.charAt(0).toUpperCase() + n.substr(1, n.length).toLowerCase();
+function capitalize(name) {
+  rturn name.charAt(0).toUpperCase() + name.substr(1, name.length).toLowerCase();
 }
 
 console.log(capitalize(name));
