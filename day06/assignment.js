@@ -1,29 +1,3 @@
-var btn = document.getElementById("btn");
-var input1 = document.getElementById("input1")
-var input2 = document.getElementById("input2").value;
-var div = document.getElementById("output");
-var helloJS = "Hello JavaScript!";
-
-function alertUser() {
-  input1.value = "";
-  input1.value = helloJS;
-  alert(helloJS);
-}
-
-function inputText() {
-  div.innerHTML = "";
-  div.innerHTML = div.innerHTML + input2;
-}
-
-function btnClick() {
-  alertUser();
-  console.log(input1);
-  console.log(input2);
-  inputText();
-}
-
-btn.onclick = btnClick;
-
 /*
 create js object for input1, input2, btn, div;
 after inputting values for input1 and input2;
@@ -32,3 +6,34 @@ input1 value replaced with text "Hellos JavaScript!";
 alert new value of input1;
 replace div text with value of input2;
 */
+
+var submitBtn = document.getElementById('submit');
+var form = document.getElementsByTagName('form')[0];
+// var submit = document.getElementById('submit');
+var btn = document.getElementById('btn');
+
+submitBtn.onclick = getVals;
+
+function getVals(e){
+    e.preventDefault();
+    var valArr = [];
+    for(var i = 0; i < form.elements.length; i++){
+        valArr.push(form.elements[i].value);
+    }
+    valArr.pop();
+    console.log(valArr);
+}
+
+function addInput(e) {
+  e.preventDefault();
+  var inputEl = document.createElement('input');
+  inputEl.id = 'newId';
+  inputEl.name = 'new';
+  inputEl.type = 'email';
+  inputEl.placeholder = 'example@email.com';
+  form.insertBefore(inputEl, submit);
+  // console.log(inputEl);
+}
+
+
+submit.onclick = addInput;
