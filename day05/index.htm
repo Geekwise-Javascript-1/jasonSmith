@@ -4,28 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Day 5</title>
+  <style>
+    .output {
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      width: 300px;
+      height: 300px;
+    }
+  </style>
 </head>
 <body>
-  <form>
-    <label for="first">First Name
-        <input type="text" id="first" name="first" value="">
-    </label>
-    <label for="last">Last Name
-        <input type="text" id="last" name="last" value="">
-    </label>
-    <label for="email">Email
-        <input type="email" id="email" name="email" value="">
-    </label>
-    <label for="phone">Phone Number
-        <input type="tel" id="phone" name="phone" value="">
-    </label>
-    <label for="pass">Password
-        <input type="password" id="pass" name="pass" value="">
-    </label>
-    <input type="submit" name="submit" id="submit" value="submit">
-  </form>
-  <button id="btn" type="button" name="button">click to add more</button>
+
+  <lable for="input1">Input 1:<input type="text" id="input1" value="" /></lable>
+  <lable for="input2">Input 2:<input type="text" id="input2" value="" /></lable>
+  <button id="btn" name="button">Go</button>
+
+  <p>
+    Text output:
+  </p>
+
+  <div class="output" id="output">
+    Input2 text goes here;
+  </div>
+
   <script src="assignment.js"></script>
 </body>
 </html>
