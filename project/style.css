@@ -1,0 +1,90 @@
+/*=====================================
+    List Style
+=====================================*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #59ABE3;
+  font-family: 'Permanent Marker', cursive;
+  color: #C5EFF7;
+}
+
+h1 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 5rem;
+  text-align: center;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+/*=====================================
+    Form
+=====================================*/
+form {
+  align-self: center;
+}
+
+#item {
+}
+
+#btn {
+  background-color: none;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 10%;
+}
+
+
+/*=====================================
+    Classes
+=====================================*/
+
+.wrapper {
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/*=====================================
+    ID
+=====================================*/
+
+#top_bar {
+  display: flex;
+  flex-direction: column;
+}
+
+
+#list_wrap {
+  margin: 10px;
+}  
+#list ul {
+}
+
+#list li {
+  background-color: rgba(52, 152, 219, 0.5);
+  padding: 10px 5px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+}
+
+#list span{
+  padding: 3px;
+}
+
+#list span:hover {
+  background-color: rgba(52, 152, 219, 0.8);
+}
+
+
