@@ -1,1 +1,115 @@
+/*=====================================
+    List Style
+=====================================*/
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #59ABE3;
+  font-family: 'Permanent Marker', cursive;
+  color: #C5EFF7;
+}
+
+h1 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 5rem;
+  text-align: center;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+/*=====================================
+    Form
+=====================================*/
+form {
+  align-self: center;
+}
+
+#item {
+}
+
+#btn {
+  background-color: none;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 10%;
+}
+
+
+/*=====================================
+    Classes
+=====================================*/
+
+.wrapper {
+  max-width: 720px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 215px;
+}
+
+/*=====================================
+    ID
+=====================================*/
+
+#top_bar {
+  background-color: #59ABE3;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 0 60px 30px #59ABE3;
+  padding-bottom: 10px;
+  position: fixed;
+  width: 100%;
+  height: 160px;
+  top: 0;
+}
+
+
+#list_wrap {
+  margin: 10px;
+}  
+#list ul {
+}
+
+#list li {
+  background-color: rgba(52, 152, 219, 0.5);
+  padding: 10px 5px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+}
+
+#list span{
+  padding: 3px;
+}
+
+
+
+#list span:hover {
+  background-color: rgba(52, 152, 219, 0.8);
+}
+
+
+/*=====================================
+    MEDIA
+=====================================*/
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 360px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
